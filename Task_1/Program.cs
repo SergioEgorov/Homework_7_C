@@ -6,7 +6,7 @@
 // 1 -3,3 8 -9,9
 // 8 7,8 -7,1 9
 
-double[,] GetArray(double m, double n)
+double[,] GetArray(double rows, double columns)
 {
     double[,] matrix = new double[3, 4];
     for (int i = 0; i < matrix.GetLength(0); i++)
@@ -18,6 +18,7 @@ double[,] GetArray(double m, double n)
     }
     return matrix;
 }
+
 
 double[,] result = GetArray(3, 4);
 void PrintArray(double[,] inputMatrix)
